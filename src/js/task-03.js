@@ -26,14 +26,15 @@ images.map(image => (
 ));
 
 const imgEl = document.querySelectorAll(".img");
-const styleImg = imgEl.forEach(img =>{
-  img.style.width = "400px";
-})
+const styleImg = imgEl.forEach(img => {
+  img.style.width = "200px";
+  img.style.display = "flex";
+});
 
-// const itemEl = document.querySelectorAll(".item");
-// const styleItem = widthEl.forEach(item =>{
-//   item.style.;
-// });
+const listEl = document.querySelectorAll(".gallery");
+const styleList = listEl.forEach(list =>{
+  list.style.list-style = "none";
+});
  
 
 
