@@ -27,13 +27,18 @@ images.map(image => (
 
 const imgEl = document.querySelectorAll(".img");
 const styleImg = imgEl.forEach(img => {
-  img.style.width = "200px";
-  img.style.display = "flex";
+  img.style.width = "250px";
+  img.style.height = "150px";
 });
+
+
 
 const listEl = document.querySelectorAll(".gallery");
 const styleList = listEl.forEach(list =>{
-  list.style.list-style = "none";
+  list.style.listStyle = "none";
+  list.style.display = "flex";
+  list.style.justifyContent = "center";
+  list.style.gap= "20px";
 });
  
 
