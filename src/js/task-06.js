@@ -7,14 +7,10 @@ const hendleOnTexeLength = (event) => {
         return inputEl.classList = "";
     };
 
-    inputValue.length <= inputEl.dataset.length
+    inputValue.length == inputEl.dataset.length
         ? inputEl.classList = "valid"
         : inputEl.classList = "invalid";
     
-    // if (inputValue.length <= inputEl.dataset.length) {
-    //     return inputEl.classList = "valid";
-    // } else {
-    //     return inputEl.classList = "invalid";
-    // }
 };
+
 inputEl.addEventListener("blur", hendleOnTexeLength);

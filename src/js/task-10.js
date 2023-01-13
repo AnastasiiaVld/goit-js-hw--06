@@ -6,7 +6,8 @@ const createBtn = document.querySelector('button[data-create]');
 const destroyBtn = document.querySelector('button[data-destroy]');
 const boxesEl = document.querySelector('#boxes');
 const inputEl = document.querySelector('input');
-let value;
+let value = "";
+let initialSize = 30;
 
 
 const getInputValue = event => {
@@ -14,8 +15,6 @@ const getInputValue = event => {
 }
 
 function createBoxes(amount) {
-  let initialSize = 30;
-
   for (let index = 1; index <= amount; index++) {
     const box = `
       <div style="width: ${initialSize}px; height: ${initialSize}px; background: ${getRandomHexColor()}"></div>

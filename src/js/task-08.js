@@ -9,11 +9,11 @@ const hendlerSubmitForm = (event) => {
 
 
    if (email.value === "" || password.value === "") {
-    window.alert('All fields must be filled!');
+   return window.alert('All fields must be filled!');
   }
 
 
-  console.log(`Email: ${email.value}, Password: ${password.value}`);
+  console.log({Email: email.value, Password: password.value});
   event.currentTarget.reset(); 
 }
 
